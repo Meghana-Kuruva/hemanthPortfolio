@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Instagram, Search, Wallet } from 'lucide-react';
+import { Linkedin, Instagram, Wallet } from 'lucide-react';
+import searchIcon from '../assets/Search_Icon.png';
 
 // Import images
 import splitzy1 from '../assets/splitzy_1.png';
@@ -27,11 +28,11 @@ const SplitzyProject = ({ onBack }) => {
                 {/* 2. Hero Section: SPLITZY TITLE & Description */}
                 <div className="grid lg:grid-cols-2 gap-20 items-center mb-48">
                     <div className="space-y-16">
-                        <h2 className="text-9xl md:text-[12rem] font-black text-white uppercase tracking-tighter leading-none">SPLITZY</h2>
+                        <h2 className="text-9xl md:text-[12rem] text-white uppercase leading-none">SPLITZY</h2>
 
                         <div className="flex flex-col md:flex-row gap-16 items-start">
                             <div className="space-y-8">
-                                <span className="text-white font-black text-sm uppercase opacity-80 tracking-widest">Tools Used</span>
+                                <span className="text-white text-sm uppercase opacity-80 tracking-widest">Tools Used</span>
                                 <div className="space-y-8">
                                     <div className="flex gap-6">
                                         <div className="w-16 h-16 bg-white/10 rounded-none p-4 flex items-center justify-center border-2 border-white/20 hover:bg-white/20 transition-all shadow-xl">
@@ -46,11 +47,11 @@ const SplitzyProject = ({ onBack }) => {
                                     </div>
                                     <div className="inline-flex items-center gap-4 bg-white/10 border-2 border-white/20 px-6 py-3 rounded-none shadow-xl">
                                         <img src={netlifyIcon} alt="Netlify" className="h-5 w-auto" />
-                                        <span className="text-white text-xs font-black uppercase tracking-widest opacity-80">Netlify Project</span>
+                                        <span className="text-white text-xs uppercase tracking-widest opacity-80">Netlify Project</span>
                                     </div>
                                 </div>
                             </div>
-                            <p className="text-white text-xl font-bold leading-relaxed max-w-md uppercase opacity-90 mt-6 pt-2 border-t-2 border-white/10">
+                            <p className="text-white text-xl leading-relaxed max-w-md uppercase opacity-90 mt-6 pt-2 border-t-2 border-white/10">
                                 Personal finance management simple, accessible, and effective for everyone, to take control of financial future with smart budgeting tools and insights.
                             </p>
                         </div>
@@ -64,9 +65,9 @@ const SplitzyProject = ({ onBack }) => {
                                 className="bg-dark/30 flex items-center gap-6 px-8 py-6 rounded-none border-4 border-white/20 shadow-2xl hover:bg-white/10 transition-all group scale-105 origin-left"
                             >
                                 <div className="w-12 h-12 rounded-none bg-white/20 flex items-center justify-center group-hover:bg-white/40 transition-colors">
-                                    <Search size={24} className="text-white" />
+                                    <img src={searchIcon} alt="search" className="w-6 h-6" />
                                 </div>
-                                <span className="text-white text-lg font-black uppercase tracking-tight opacity-95">https://splitzy-mern-app.web.app/</span>
+                                <span className="text-white text-lg uppercase tracking-tight opacity-95">https://splitzy-mern-app.web.app/</span>
                             </a>
                         </div>
                     </div>
@@ -90,13 +91,13 @@ const SplitzyProject = ({ onBack }) => {
                         <div className="w-20 h-20 bg-[#009E5F]/10 rounded-none flex items-center justify-center border-2 border-[#009E5F]/20">
                             <Wallet size={48} className="text-[#009E5F]" />
                         </div>
-                        <h3 className="text-7xl font-black text-dark tracking-tighter uppercase">Splitzy</h3>
+                        <h3 className="text-7xl text-dark uppercase">Splitzy</h3>
                     </div>
                 </div>
 
                 {/* 4. Intro Paragraph: Center block, Bold Uppercase */}
                 <div className="max-w-5xl mx-auto mb-32">
-                    <p className="text-white text-xl md:text-2xl font-black leading-relaxed text-center uppercase tracking-tight opacity-95">
+                    <p className="text-white text-xl md:text-2xl leading-relaxed text-center uppercase tracking-tight opacity-95">
                         The Spending Tracker App is a web-based personal finance application designed to help users record expenses, analyze spending patterns, and build better financial habits. This project was developed as part of a college mini project, focusing on applying core personal finance principles through a user-centered digital product.
                     </p>
                 </div>
@@ -127,8 +128,8 @@ const SplitzyProject = ({ onBack }) => {
                             <img src={splitzy6} alt="Data Visualization" className="w-full h-auto" />
                         </motion.div>
                         <div className="text-white space-y-10">
-                            <h4 className="text-6xl font-black uppercase tracking-tighter">Data Visualization</h4>
-                            <p className="text-xl font-bold leading-relaxed opacity-90 uppercase">
+                            <h4 className="text-6xl uppercase">Data Visualization</h4>
+                            <p className="text-xl leading-relaxed opacity-90 uppercase">
                                 To improve financial awareness, the app uses data visualization techniques such as charts and summaries to present spending patterns clearly. Visual representations allow users to quickly understand where their money goes, compare categories, and identify trends over time, making complex financial data easier to interpret and act upon.
                             </p>
                         </div>
@@ -137,8 +138,8 @@ const SplitzyProject = ({ onBack }) => {
                     {/* 50/30/20 RULE: Text Left, Image Right */}
                     <div className="grid md:grid-cols-2 gap-20 items-center">
                         <div className="text-white space-y-10 order-2 md:order-1">
-                            <h4 className="text-6xl font-black uppercase tracking-tighter">50/30/20 Rule</h4>
-                            <p className="text-xl font-bold leading-relaxed opacity-90 uppercase">
+                            <h4 className="text-6xl uppercase">50/30/20 Rule</h4>
+                            <p className="text-xl leading-relaxed opacity-90 uppercase">
                                 The app is inspired by the 50/30/20 budgeting rule, which divides income into three categories: 50% for needs, 30% for wants, and 20% for savings. This principle was used as a reference framework during development to help users evaluate whether their spending habits are balanced and aligned with common personal finance standards.
                             </p>
                         </div>
@@ -173,8 +174,8 @@ const SplitzyProject = ({ onBack }) => {
                             <img src={splitzy3} alt="Expense Entry Form" className="w-full h-auto" />
                         </motion.div>
                         <div className="text-white space-y-10">
-                            <h4 className="text-6xl font-black uppercase tracking-tighter">Envelope System</h4>
-                            <p className="text-xl font-bold leading-relaxed opacity-90 uppercase">
+                            <h4 className="text-6xl uppercase">Envelope System</h4>
+                            <p className="text-xl leading-relaxed opacity-90 uppercase">
                                 The envelope system influenced the expense categorization feature of the app. Each spending category functions like a digital envelope, encouraging users to consciously allocate and track money within specific limits. This approach promotes discipline and helps users avoid overspending in particular categories.
                             </p>
                         </div>
@@ -214,15 +215,15 @@ const SplitzyProject = ({ onBack }) => {
                 {/* 7. Outcome & Learnings: Perfectly formatted text */}
                 <div className="text-white space-y-24 max-w-6xl mx-auto mt-48">
                     <div className="space-y-6">
-                        <h3 className="text-4xl font-black uppercase italic text-white underline decoration-amber decoration-8 underline-offset-[12px]">Outcome</h3>
-                        <p className="text-xl font-bold leading-relaxed uppercase opacity-90 max-w-4xl pt-4">
+                        <h3 className="text-4xl uppercase text-white underline decoration-amber decoration-8 underline-offset-[12px]">Outcome</h3>
+                        <p className="text-xl leading-relaxed uppercase opacity-90 max-w-4xl pt-4">
                             The final application allows users to log expenses, view category-level spending, and gain clear insights into their financial habits. The project successfully demonstrates the application of financial tracking techniques combined with modern front-end development practices.
                         </p>
                     </div>
 
                     <div className="space-y-10">
-                        <h3 className="text-4xl font-black uppercase italic text-white underline decoration-amber decoration-8 underline-offset-[12px]">Key Learnings</h3>
-                        <ul className="grid gap-6 text-xl font-bold uppercase opacity-90 pt-4">
+                        <h3 className="text-4xl uppercase text-white underline decoration-amber decoration-8 underline-offset-[12px]">Key Learnings</h3>
+                        <ul className="grid gap-6 text-xl uppercase opacity-90 pt-4">
                             <li className="flex gap-6 items-center">
                                 <span className="w-3 h-3 bg-amber rounded-none ring-4 ring-white/10" />
                                 <span>Translating finance concepts into usable digital features</span>

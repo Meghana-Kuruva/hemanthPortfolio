@@ -50,8 +50,8 @@ function AppContent() {
       <Navbar onSelectProject={handleSelectProject} navBg={NAV_BG[variant]} />
       <div className="flex-1">
         <Routes>
-          <Route 
-            path="/" 
+          <Route
+            path="/"
             element={
               <div className="flex flex-col">
                 <Hero onSelectProject={handleSelectProject} />
@@ -60,7 +60,7 @@ function AppContent() {
                 <EduSkills />
                 <Projects onSelectProject={handleSelectProject} />
               </div>
-            } 
+            }
           />
           <Route path="/ieee" element={<IeeeProject onBack={() => navigate('/')} />} />
           <Route path="/splitzy" element={<SplitzyProject onBack={() => navigate('/')} />} />

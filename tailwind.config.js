@@ -7,15 +7,15 @@ export default {
     theme: {
         extend: {
             colors: {
-                cream: "#F2EFE9",
-                coral: "#FF6B4A",
-                navy: "#0E4DA4",
-                amber: "#FBBF24",
-                dark: "#1A1A1A",
+                cream: "#F7F0E2",
+                coral: "#FD5A47",
+                navy: "#048CD6",
+                amber: "#009A5E",
+                dark: "#1F1F1F",
             },
             fontFamily: {
-                sans: ['Inter', 'system-ui', 'sans-serif'],
-                display: ['Outfit', 'sans-serif'],
+                sans: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+                display: ['Staatliches', 'sans-serif'],
                 mono: ['Space Mono', 'monospace'],
             },
             backgroundImage: {

@@ -1,7 +1,8 @@
 import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
-import { ArrowLeft, Search, Linkedin, Instagram } from 'lucide-react';
+import { ArrowLeft, Linkedin, Instagram } from 'lucide-react';
+import searchIcon from '../assets/Search_Icon.png';
 import portraitImg from '../assets/Hemanth_image_3.png';
 import ieee1 from '../assets/IEEE_1.png';
 import ieee2 from '../assets/IEEE_2.png';
@@ -14,8 +15,9 @@ import js from '../assets/js.png';
 //import cubeIcon from '../assets/MCET_IEEE.png';
 import mcetLogo from '../assets/MCET_IEEE_LOGO.png';
 import linkedIN from '../assets/linkedIn.png';
+import socialMediaTxt from '../assets/Social_Media_txt.png';
 
-import instagramMockup from '../assets/socialmedia_1.png';
+import instagramMockup from '../assets/Insta_Views_extended.png';
 
 const IeeeProject = () => {
     return (
@@ -35,7 +37,7 @@ const IeeeProject = () => {
                             {/* Icon + Year */}
                             <div className="w-full border-[6px] border-[#F1F5F9] rounded-[2rem] p-8 flex flex-col items-center mb-12">
                                 <img src={mcetLogo} alt="IEEE Icon" className="w-100 h-100 mb-4" />
-                                <span className="text-dark font-black text-4xl">2025-2026</span>
+                                <span className="text-dark text-4xl">2025-2026</span>
                             </div>
 
                             {/* Ieee image section */}
@@ -46,8 +48,8 @@ const IeeeProject = () => {
 
                             {/* Problem Section */}
                             <div className="w-full space-y-6 text-left mb-20 px-4">
-                                <h3 className="text-4xl font-black uppercase text-[#008DD5]">Problem</h3>
-                                <p className="text-[#475569] text-lg leading-relaxed font-medium">
+                                <h3 className="text-4xl font-sans uppercase text-[#008DD5]">Problem</h3>
+                                <p className="text-[#475569] text-lg leading-relaxed font-sans">
                                     The student branch lacked a consistent and well-structured online presence.
                                     Information about events, announcements, and activities was scattered across
                                     various platforms, making it difficult for students and visitors to stay updated
@@ -72,8 +74,8 @@ const IeeeProject = () => {
 
                             {/* Key Learnings */}
                             <div className="w-full space-y-6 text-left px-4 mt-5 mb-20">
-                                <h3 className="text-4xl font-black uppercase text-[#008DD5]">Key Learnings</h3>
-                                <p className="text-[#008DD5] text-lg leading-tight font-bold">
+                                <h3 className="text-4xl font-sans uppercase text-[#008DD5]">Key Learnings</h3>
+                                <p className="text-[#008DD5] text-lg leading-tight">
                                     Designing for clarity, maintaining long-term projects, and managing real-world content independently.
                                 </p>
                             </div>
@@ -83,7 +85,7 @@ const IeeeProject = () => {
                     {/* RIGHT: WEBSITE CONTENT */}
                     <div className="md:col-span-7 space-y-20 pt-10 text-white ml-30">
                         <div className="space-y-12">
-                            <h2 className="text-6xl md:text-9xl font-black leading-none uppercase tracking-tighter">
+                            <h2 className="text-6xl md:text-9xl font-sans leading-none uppercase tracking-tighter">
                                 IEEE MCET <br />
                                 STUDENT BRANCH <br />
                                 Website
@@ -91,7 +93,7 @@ const IeeeProject = () => {
 
                             <div className="flex flex-col md:flex-row items-center gap-12">
                                 <div className="flex items-center gap-6">
-                                    <span className="font-bold uppercase tracking-widest text-xs opacity-70">Tools</span>
+                                    <span className="uppercase tracking-widest text-xs opacity-70">Tools</span>
                                     <div className="flex gap-4">
                                         {/* WordPress Icon */}
                                         <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center hover:bg-white/30 transition-colors">
@@ -121,7 +123,7 @@ const IeeeProject = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-xl font-medium max-w-sm leading-tight italic opacity-90">
+                                <p className="text-xl leading-tight opacity-90">
                                     As the Webmaster — designed, maintained, and managed the website for one academic year
                                 </p>
                             </div>
@@ -135,13 +137,13 @@ const IeeeProject = () => {
                                     className="bg-dark flex items-center gap-4 px-8 py-4 rounded-full border-2 border-white/20 hover:bg-slate-800 transition-all text-white/90"
                                 >
                                     <div className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center">
-                                        <Search size={20} className="text-white" />
+                                        <img src={searchIcon} alt="search" className="w-5 h-5 invert" />
                                     </div>
-                                    <span className="font-medium tracking-tight text-lg truncate">https://mcet.ieee.org.in/hemanth-vj/</span>
+                                    <span className="tracking-tight text-lg truncate">https://mcet.ieee.org.in/hemanth-vj/</span>
                                 </a>
                             </div>
 
-                            <p className="text-lg leading-relaxed opacity-95 max-w-2xl font-medium">
+                            <p className="text-lg leading-relaxed opacity-95 max-w-2xl">
                                 The IEEE MCET Student Branch required a centralized digital platform to showcase events,
                                 announcements, achievements, and student activities. As the Webmaster, I was responsible
                                 for designing, developing, and managing the official website for the student branch
@@ -164,8 +166,8 @@ const IeeeProject = () => {
                             />
 
                             <div className="space-y-8">
-                                <h3 className="text-4xl font-black uppercase text-amber">Process</h3>
-                                <p className="text-xl leading-relaxed opacity-95 font-medium">
+                                <h3 className="text-4xl font-sans uppercase text-amber" style={{ color: "#FFC600" }}>Process</h3>
+                                <p className="text-xl leading-relaxed opacity-95">
                                     I began by reviewing other IEEE student branch websites to understand common structures and content needs.
                                     Based on this, I planned a simple navigation system and designed clean layouts aligned with IEEE branding.
                                     The website was then developed using HTML, CSS in WordPress with a focus on responsiveness and maintainability.
@@ -187,119 +189,118 @@ const IeeeProject = () => {
                 </div>
             </div>
 
-            {/* ─── MARQUEE SEPARATOR ─── */}
-            <div className="bg-[#1A1A1A] py-12 overflow-hidden border-y-4 border-dark/20 relative z-10">
-                <div className="flex whitespace-nowrap animate-marquee font-display">
-                    <span className="text-7xl md:text-9xl font-black text-outline opacity-20 mr-12 uppercase">Social Media Management</span>
-                    <span className="text-7xl md:text-9xl font-black text-white mr-12 uppercase">Social Media Management</span>
-                    <span className="text-7xl md:text-9xl font-black text-outline opacity-20 mr-12 uppercase">Social Media Management</span>
-                    <span className="text-7xl md:text-9xl font-black text-white mr-12 uppercase">Social Media Management</span>
+            {/* ─── SOCIAL MEDIA BANNER ─── */}
+            <div className="relative z-20 w-full overflow-hidden">
+                {/* Background Bands to match mockup transition (Blue -> Black -> Purple) */}
+                <div className="absolute inset-0 flex flex-col pointer-events-none">
+                    <div className="h-[25%] bg-[#008DD5]" />
+                    <div className="h-[50%] bg-[#1A1A1A]" />
+                    <div className="h-[25%] bg-[#5b2d9e]" />
                 </div>
+
+                {/* The Image (Text) overlapping the bands */}
+                <img
+                    src={socialMediaTxt}
+                    alt="Social Media Management"
+                    className="w-full h-auto block relative z-10"
+                />
             </div>
 
             {/* ─── PART 2: SOCIAL MEDIA MANAGEMENT (PURPLE) ─── */}
-            <section className="bg-[#6B21A8] text-white py-24 pb-48 px-6 md:px-12 relative">
-                <div className="container mx-auto max-w-6xl">
+            <section className="bg-[#5b2d9e] text-white py-24 pb-48 px-6 md:px-12 relative overflow-hidden">
+                <div className="container mx-auto max-w-6xl relative z-10">
 
-                    {/* TWO COLUMN LAYOUT: LinkedIn (left) and Instagram (right) */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-40">
-                        {/* LEFT: LINKEDIN (SECTION 1) */}
-                        <div className="flex flex-col gap-8">
-                            {/* LinkedIn Icon and Text */}
-                            <div className="flex flex-col gap-4">
+                    {/* COLUMN-WISE ZIGZAG LAYOUT */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
 
-                                {/* Instagram Mockup */}
-                                <motion.img
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
+                        {/* COLUMN 1 */}
+                        <div className="space-y-32 md:space-y-64">
+                            {/* Instagram Mockup (Top Left) */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="flex justify-center"
+                            >
+                                <img
                                     src={instagramMockup}
                                     alt="Instagram Page"
-                                    className="w-full h-auto md:w-[550px] md:h-[1000px] rounded-2xl border-4 border-white/10 shadow-2xl"
+                                    className="w-full max-w-[400px] h-auto rounded-3xl border-4 border-white/10 shadow-2xl"
                                 />
+                            </motion.div>
 
-                                <div className='pt-40 pb-40'>
-
-                                    <div className="flex items-center gap-3 px-6 py-3.5 rounded-full shadow-lg pt-5 mt-5 mb-5" style={{ background: "#f9a825" }}>
-                                        {/* Search icon */}
-                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                                            <circle cx="11" cy="11" r="7" stroke="#c97d00" strokeWidth="2.5" />
-                                            <path d="M16.5 16.5L21 21" stroke="#c97d00" strokeWidth="2.5" strokeLinecap="round" />
-                                        </svg>
-
-                                        {/* URL */}
-                                        <a
-                                            href="https://www.linkedin.com/company/ieee-mcet-student-branch/"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-base font-medium underline whitespace-nowrap "
-                                            style={{ color: "#5b2d9e" }}
-                                        >
-                                            https://www.linkedin.com/company/ieee-mcet-student-branch/
-                                        </a>
-                                    </div>
-                                    {/* Instagram Text */}
-                                    <h4 className="text-4xl font-black uppercase tracking-tight mt-5 mb-5 ">LinkedIn</h4>
-
-                                    {/* Instagram Description */}
-                                    <p className="text-lg leading-relaxed font-medium opacity-90 mt-5 mb-5">
-                                        I established and managed the official LinkedIn page for the IEEE MCET Student Branch, curating professional content to highlight student achievements, events, and industry connections. The strategy focused on showcasing the branch's impact and fostering engagement with alumni and industry professionals, resulting in increased visibility and networking opportunities for students.
-                                    </p>
-
+                            {/* LinkedIn Text (Bottom Left) */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="space-y-8"
+                            >
+                                <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full shadow-lg" style={{ background: "#f9a825" }}>
+                                    <img src={searchIcon} alt="search" className="w-5 h-5" style={{ filter: 'brightness(0) saturate(100%) invert(43%) sepia(91%) saturate(2681%) hue-rotate(14deg) brightness(97%) contrast(101%)' }} />
+                                    <a
+                                        href="https://www.linkedin.com/company/ieee-mcet-student-branch/"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="text-base underline font-sans"
+                                        style={{ color: "#5b2d9e" }}
+                                    >
+                                        https://www.linkedin.com/company/ieee-mcet-student-branch/
+                                    </a>
                                 </div>
-                            </div>
+                                <h4 className="text-5xl font-sans uppercase">LinkedIn</h4>
+                                <p className="text-xl leading-relaxed opacity-90">
+                                    I established the LinkedIn page for the IEEE MCET Student Branch to build a professional digital presence aligned with IEEE standards. The platform was used to showcase events, collaborations, achievements, and chapter updates in a formal and structured manner, helping improve credibility and outreach among faculty, professionals, and partner organizations.
+                                </p>
+                            </motion.div>
                         </div>
 
-                        {/* RIGHT: INSTAGRAM (SECTION 2) */}
-                        <div className="flex flex-col gap-8">
-                            <div className='pt-20 pb-20'>
-                                <div className="flex items-center gap-5 px-6 py-3.5 rounded-full shadow-lg " style={{ background: "#f9a825" }}>
-                                    {/* Search icon */}
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                                        <circle cx="11" cy="11" r="7" stroke="#c97d00" strokeWidth="2.5" />
-                                        <path d="M16.5 16.5L21 21" stroke="#c97d00" strokeWidth="2.5" strokeLinecap="round" />
-                                    </svg>
-
-                                    {/* URL */}
+                        {/* COLUMN 2 */}
+                        <div className="space-y-20 md:space-y-32 md:mt-48">
+                            {/* Instagram Text (Top Right) */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                className="space-y-8"
+                            >
+                                <div className="inline-flex items-center gap-1 px-6 py-2 rounded-full mr-70 shadow-lg" style={{ background: "#f9a825" }}>
+                                    <img src={searchIcon} alt="search" className="w-3 h-3" style={{ filter: 'brightness(0) saturate(100%) invert(43%) sepia(91%) saturate(2681%) hue-rotate(14deg) brightness(97%) contrast(101%)' }} />
                                     <a
                                         href="https://www.instagram.com/ieee.mcet/"
                                         target="_blank"
                                         rel="noreferrer"
-                                        className="text-base font-medium underline whitespace-nowrap"
+                                        className="text-base underline font-sans"
                                         style={{ color: "#5b2d9e" }}
                                     >
                                         https://www.instagram.com/ieee.mcet/
                                     </a>
                                 </div>
-                                {/* Instagram Text */}
-                                <h4 className="text-4xl font-black uppercase tracking-tight  mt-5 mb-5">Instagram</h4>
-
-                                {/* Instagram Description */}
-                                <p className="text-lg leading-relaxed font-medium opacity-90">
-                                    I created and managed the official Instagram page for the IEEE MCET Student Branch,
-                                    shaping its visual identity and content strategy from the ground up.
-                                    The focus was on engaging, fast-paced content such as reels, event highlights,
-                                    and visual storytelling to increase reach and student engagement. This approach
-                                    led to organic growth, with over 141,000 views in 90 days.
+                                <h4 className="text-5xl font-sans uppercase">Instagram</h4>
+                                <p className="text-xl leading-relaxed opacity-90">
+                                    I created and managed the official Instagram page for the IEEE MCET Student Branch, shaping its visual identity and content strategy from the ground up. The focus was on engaging, fast-paced content such as reels, event highlights, and visual storytelling to increase reach and student engagement. This approach led to strong organic growth, with over 141,000 views in 90 days and significant visibility among non-followers, helping the club reach a wider student audience.
                                 </p>
+                            </motion.div>
 
-                            </div>
-
-                            {/* LinkedIn Mockup */}
-                            <motion.img
-                                initial={{ opacity: 0, y: 20 }}
+                            {/* LinkedIn Mockup (Bottom Right) */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                src={linkedIN}
-                                alt="LinkedIn Page"
-                                className="w-full h-auto rounded-2xl border-4 border-white/10 shadow-2xl"
-                            />
+                                className="flex justify-center"
+                            >
+                                <img
+                                    src={linkedIN}
+                                    alt="LinkedIn Page"
+                                    className="w-full max-w-[400px] h-auto rounded-3xl border-4 border-white/10 shadow-2xl"
+                                />
+                            </motion.div>
                         </div>
                     </div>
 
                     {/* Final Summary */}
                     <div className="mt-40 text-center max-w-5xl mx-auto space-y-8">
-                        <p className="text-2xl leading-relaxed font-bold opacity-80 italic max-w-4xl mx-auto">
+                        <p className="text-2xl leading-relaxed opacity-80 max-w-4xl mx-auto">
                             As Webmaster, I was responsible for creating and managing both Instagram and LinkedIn pages
                             for the IEEE MCET Student Branch, crafting the content direction, visual consistency, and
                             platform-specific strategies to strengthen the club's online presence. Together, these

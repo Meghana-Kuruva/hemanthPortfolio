@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectPopup from './ProjectPopup';
+import hemanthLogo from '../assets/Hemanth_Logo.png';
 
 const Navbar = ({ onSelectProject, navBg = 'bg-cream' }) => {
     const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -9,13 +10,13 @@ const Navbar = ({ onSelectProject, navBg = 'bg-cream' }) => {
     };
 
     return (
-        <nav className={`w-full z-[100] pt-8 px-6 md:px-12 ${navBg}`}>
+        <nav className={`w-full z-[100] pt-8 md:px-12 ${navBg}`} style={{ paddingLeft: "12rem", paddingRight: "12rem" }}>
             <div className="border-4 border-dark flex justify-between items-center bg-white h-20 px-8 relative shadow-[8px_8px_0px_0px_rgba(26,26,26,1)]">
                 <button
                     onClick={handleLogoClick}
-                    className="text-3xl font-black tracking-tighter uppercase font-display cursor-pointer hover:opacity-70 transition-opacity"
+                    className="cursor-pointer hover:opacity-70 transition-opacity"
                 >
-                    Hemanth
+                    <img src={hemanthLogo} alt="Hemanth Logo" className="h-10 w-auto" />
                 </button>
                 <div className="flex divide-x-4 divide-dark h-full border-l-4 border-dark relative">
                     <button
