@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import profilePhoto from '../assets/Hemanth_image_2.png';
+import starsImg from "../assets/Star's.png";
 import searchIcon from '../assets/Search_Icon.png';
 import resumeTxt from '../assets/Resume_txt.png';
 import hemanthWriting from '../assets/Hemanth_Writing.png';

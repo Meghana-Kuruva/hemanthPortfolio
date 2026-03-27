@@ -2,6 +2,9 @@ import React from 'react';
 import figmaIcon from '../assets/figmaLanding.png';
 import wordpressIcon from '../assets/wordpress.png';
 import canvaIcon from '../assets/canva.png';
+import hobbiesImg from '../assets/Hobbies_Interests.png'; 
+import arrowRed from '../assets/Arrow_Red.png';
+import arrowYellow from '../assets/Arrow_Yellow.png';
 
 /* ─── Icons for Hobbies (using placeholders or lucide if available, but image shows specific icons) ─── */
 import { Brain, BookOpen, Palette, Coffee } from 'lucide-react';
